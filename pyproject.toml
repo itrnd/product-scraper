@@ -1,0 +1,26 @@
+[project]
+name = "product-scraper"
+version = "0.1.0"
+description = "Web scraper for product data from webscraper.io"
+requires-python = ">=3.12"
+dependencies = [
+    "selenium",
+    "pandas",
+    "webdriver-manager",
+    "pyyaml"
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "black",
+    "mypy",
+    "pre-commit",
+    "pytest",
+    "pytest-mock",
+    "pandas-stubs>=2.2.3.250308",
+    "types-pyyaml>=6.0.12.20250516",
+]
+
+[tool.black]
+line-length = 120
